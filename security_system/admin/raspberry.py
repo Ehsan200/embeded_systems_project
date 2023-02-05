@@ -10,8 +10,7 @@ class RaspberryAdmin(admin.ModelAdmin):
         total_n_oks = []
         for single_raspberry in queryset.all():
             result = requests.post(
-                # todo: change route
-                f'http://{single_raspberry.ip}:8000/security-system/health-check/',
+                f'http://{single_raspberry.ip}:8000/security/password/',
                 {
                     'admin_code': single_raspberry.admin_code,
                     'user_code': single_raspberry.user_code,
