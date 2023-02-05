@@ -4,11 +4,13 @@ certifi==2022.12.7
 charset-normalizer==3.0.1
 colorzero==2.0
 Django==4.1.6
+django-4-jet==1.0.9
 djangorestframework==3.14.0
 gpiozero==1.6.2
 idna==3.4
 Pillow==9.4.0
 pytz==2022.7.1
 requests==2.28.2
+six==1.16.0
 sqlparse==0.4.3
 urllib3==1.26.14
