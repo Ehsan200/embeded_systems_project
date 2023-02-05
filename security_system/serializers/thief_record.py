@@ -8,7 +8,6 @@ class ThiefRecordSerializer(ModelSerializer):
         model = ThiefRecord
         fields = (
             'id',
-            'time',
             'image',
             'raspberry',
         )

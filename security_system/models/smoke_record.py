@@ -4,6 +4,10 @@ from security_system.models import BaseRecord
 
 
 class SmokeRecord(BaseRecord):
-    gas_type = models.CharField(max_length=250)
+    smoke = models.FloatField()
 
-    value = models.FloatField()
+    methan = models.FloatField()
+
+    lpg = models.FloatField()
+
+    hydrogen = models.FloatField()

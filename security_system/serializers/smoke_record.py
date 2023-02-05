@@ -8,9 +8,10 @@ class SmokeRecordSerializer(ModelSerializer):
         model = SmokeRecord
         fields = (
             'id',
-            'time',
-            'gas_type',
-            'value',
+            'smoke',
+            'methan',
+            'lpg',
+            'hydrogen',
             'raspberry',
         )
 

@@ -7,8 +7,10 @@ class SmokeRecordAdmin(admin.ModelAdmin):
     readonly_fields = (
         'raspberry',
         'time',
-        'gas_type',
-        'value',
+        'smoke',
+        'methan',
+        'lpg',
+        'hydrogen',
     )
 
     def get_queryset(self, request):
