@@ -23,6 +23,3 @@ class Raspberry(models.Model):
             MaxValueValidator(900_000_000),
         ],
     )
-
-    def __str__(self):
-        return self.ip

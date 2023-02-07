@@ -9,10 +9,6 @@ class SmokeRecordSerializer(ModelSerializer):
         fields = (
             'id',
             'smoke',
-            'methan',
-            'lpg',
-            'hydrogen',
-            'raspberry',
         )
 
         extra_kwargs = {
