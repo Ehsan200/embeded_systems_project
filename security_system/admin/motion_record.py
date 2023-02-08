@@ -3,7 +3,7 @@ from ..models import MotionRecord
 
 
 @admin.register(MotionRecord)
-class SmokeRecordAdmin(admin.ModelAdmin):
+class MotionRecordAdmin(admin.ModelAdmin):
     readonly_fields = (
         'raspberry',
         'time',
@@ -11,9 +11,15 @@ class SmokeRecordAdmin(admin.ModelAdmin):
 
     list_display = (
         'id',
-        'raspberry__ip',
+        'get_raspberry__ip',
         'time',
     )
+
+    def get_raspberry__ip(self, obj):
+        return obj.raspberry.ip
+
+    get_raspberry__ip.short_description = 'raspberry__ip'
+    get_raspberry__ip.admin_order_field = 'raspberry__ip'
 
     def get_queryset(self, request):
         qs = super().get_queryset(request)
