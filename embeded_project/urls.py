@@ -22,5 +22,5 @@ urlpatterns = [
     path('jet/', include('jet.urls', 'jet')),
     path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
     path('admin/', admin.site.urls),
-    path('security-system/', include(('security_system.urls', 'security_system'))),
+    path('security_system/', include(('security_system.urls', 'security_system'))),
 ]

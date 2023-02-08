@@ -1,11 +1,11 @@
 from rest_framework.serializers import ModelSerializer
 
-from security_system.models import SmokeRecord
+from security_system.models import MotionRecord
 
 
-class SmokeRecordSerializer(ModelSerializer):
+class MotionRecordSerializer(ModelSerializer):
     class Meta:
-        model = SmokeRecord
+        model = MotionRecord
         fields = (
             'id',
             'raspberry',
