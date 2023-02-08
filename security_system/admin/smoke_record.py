@@ -9,6 +9,13 @@ class SmokeRecordAdmin(admin.ModelAdmin):
         'time',
     )
 
+    list_display = (
+        'id',
+        'raspberry__ip',
+        'time',
+    )
+
+
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         if request.user.is_superuser:

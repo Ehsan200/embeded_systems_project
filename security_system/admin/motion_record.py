@@ -1,13 +1,12 @@
 from django.contrib import admin
-from ..models import ThiefRecord
+from ..models import MotionRecord
 
 
-@admin.register(ThiefRecord)
-class ThiefRecordAdmin(admin.ModelAdmin):
+@admin.register(MotionRecord)
+class SmokeRecordAdmin(admin.ModelAdmin):
     readonly_fields = (
         'raspberry',
         'time',
-        'image',
     )
 
     list_display = (
